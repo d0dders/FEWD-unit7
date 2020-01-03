@@ -26,4 +26,25 @@
 
 .navigation {
     background-color: #343A4A;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+
+}
+
+.navigation img {
+    height: 40px;
+}
+
+@media (min-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .navigation img {
+        margin: 15px 0;
+    }
+    
 }

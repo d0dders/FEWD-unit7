@@ -5,7 +5,7 @@
 
 .grid-container {
     display: grid;
-    grid-template-rows: auto 50px 1fr;
+    grid-template-rows: auto auto 1fr;
     grid-template-areas: 
         "head"
         "nav"
@@ -29,7 +29,7 @@ main {
 @media (min-width: 768px) {
     .grid-container {
         grid-template-rows: auto 1fr;
-        grid-template-columns: 55px 1fr;
+        grid-template-columns: auto 1fr;
         grid-template-areas: 
         "head head"
         "nav main";
