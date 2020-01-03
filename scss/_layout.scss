@@ -5,7 +5,7 @@
 
 .grid-container {
     display: grid;
-    grid-template-rows: 80px 50px 1fr;
+    grid-template-rows: auto 50px 1fr;
     grid-template-areas: 
         "head"
         "nav"
@@ -13,13 +13,11 @@
     height: 100vh;
 }
 
-header {
-    background-color: aqua;
+.header {
     grid-area: head;
 }
 
-nav {
-    background-color: brown;
+.navigation {
     grid-area: nav;
 }
 
@@ -30,7 +28,7 @@ main {
 
 @media (min-width: 768px) {
     .grid-container {
-        grid-template-rows: 80px 1fr;
+        grid-template-rows: auto 1fr;
         grid-template-columns: 55px 1fr;
         grid-template-areas: 
         "head head"
