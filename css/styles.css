@@ -43,6 +43,64 @@ main {
   }
 }
 
+/* NAV */
+.navigation {
+  background-color: #343A4A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 15px 15px 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation img {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 35px;
+  padding-top: 15px;
+  border: 5px;
+  border-left-style: outset;
+  border-left-color: #343A4A;
+  border-top-style: outset;
+  border-top-color: #343A4A;
+  border-bottom-style: inset;
+  border-bottom-color: #343A4A;
+  border-right-style: inset;
+  border-right-color: #343A4A;
+}
+
+img.active-nav {
+  border-top-color: #46A049;
+}
+
+@media (min-width: 768px) {
+  /* NAV */
+  .navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 15px 15px 15px 0;
+  }
+  .navigation img {
+    margin: 15px 0;
+    padding-top: 0;
+    padding-left: 15px;
+    height: 40px;
+  }
+  img.active-nav {
+    border-top-color: #343A4A;
+    border-left-color: #46A049;
+  }
+}
+
 /* HEADER */
 .header, .user-area {
   display: -webkit-box;
@@ -71,39 +129,6 @@ main {
   border-radius: 50%;
   height: 50px;
   margin: 0 15px;
-}
-
-/* NAV */
-.navigation {
-  background-color: #343A4A;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navigation img {
-  height: 40px;
-}
-
-@media (min-width: 768px) {
-  .navigation {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .navigation img {
-    margin: 15px 0;
-  }
 }
 
 * {
