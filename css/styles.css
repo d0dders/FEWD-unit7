@@ -51,10 +51,13 @@ main {
 .dashboard {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 .dashboard section {
   border: 1px solid lightgrey;
+  padding: 15px;
 }
 
 @media (min-width: 768px) {
