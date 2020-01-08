@@ -51,8 +51,8 @@ main {
 .dashboard {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  -ms-grid-columns: minmax(0px, 1fr);
+      grid-template-columns: minmax(0px, 1fr);
 }
 
 .dashboard section {
@@ -62,8 +62,8 @@ main {
 
 @media (min-width: 768px) {
   .dashboard {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: minmax(0px, 1fr) minmax(0px, 1fr);
+        grid-template-columns: minmax(0px, 1fr) minmax(0px, 1fr);
   }
   .dash-head,
   .traffic,

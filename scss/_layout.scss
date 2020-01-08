@@ -44,7 +44,7 @@ main {
 
 .dashboard {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0px, 1fr);
 }
 
 .dashboard section {
@@ -54,7 +54,7 @@ main {
 
 @media (min-width: 768px) {
     .dashboard {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: minmax(0px, 1fr) minmax(0px, 1fr);
     }
 
     .dash-head,
