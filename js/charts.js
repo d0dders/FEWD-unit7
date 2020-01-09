@@ -5,18 +5,31 @@ var ctx = document.getElementById('traffic');
 var myLineChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+        labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
+        "4-10", "11-17", "18-24", "25-31"],
         datasets: [{
-            data: [{
-                x: new Date(),
-                y: 20
-            }, {
-                x: new Date(),
-                y: 10
-            }]
-        }],
+        data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
+        2500],
+        backgroundColor: 'rgba(83, 89, 147, .3)',
+        borderWidth: 1,
+        }]
     },
-    
+    options: {
+        aspectRatio: 2.5,
+        animation: {
+            duration: 0
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        },
+        legend : {
+            display: false
+        }
+    }
 });
 
 /*---------------------------------------*/
@@ -29,32 +42,21 @@ var myChart = new Chart(ctx, {
         labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
         datasets: [{
             label: '# of Visits',
-            data: [50, 75, 150, 100, 200, 180, 75],
-            backgroundColor: [
-                '#535993',
-                '#535993',
-                '#535993',         
-                '#535993',
-                '#535993',
-                '#535993',
-                '#535993'
-            ],
+            data: [115, 175, 125, 225, 200, 100, 75],
+            backgroundColor: '#535993',
             borderWidth: 1
         }]
     },
     options: {
-        responsive: true,
-        legend: {
-            display: false,
-         },
         scales: {
             yAxes: [{
-                
                 ticks: {
-                    beginAtZero: true,
-                    max: 250,
+                beginAtZero:true
                 }
             }]
+        },
+        legend : {
+            display: false
         }
     }
 });
