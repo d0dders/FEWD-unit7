@@ -166,6 +166,34 @@ img.active-nav {
   margin: 0 15px;
 }
 
+/* MEMBERS & ACTIVITY */
+.members-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgrey;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.members-container:last-child {
+  border-bottom: none;
+}
+
+.members-container p:last-child {
+  margin-left: auto;
+}
+
+.members-container img {
+  border-radius: 50%;
+  width: 40px;
+  margin-right: 10px;
+}
+
 * {
   font-family: 'Roboto', sans-serif;
 }

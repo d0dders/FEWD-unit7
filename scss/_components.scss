@@ -21,3 +21,26 @@
     height: 50px;
     margin: 0 15px;
 }
+
+/* MEMBERS & ACTIVITY */
+.members-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgrey;
+    flex-wrap: wrap;
+}
+
+.members-container:last-child {
+    border-bottom: none;
+}
+
+.members-container p:last-child {
+    margin-left: auto;
+}
+
+.members-container img {
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 10px;
+}
