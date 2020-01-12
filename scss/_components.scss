@@ -26,6 +26,7 @@
 .members-container {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     padding: 10px 0;
     border-bottom: 1px solid lightgrey;
     flex-wrap: wrap;
@@ -43,4 +44,15 @@
     border-radius: 50%;
     width: 40px;
     margin-right: 10px;
+}
+
+.activity-text p:last-child {
+    color: #535993;
+    font-size: small;
+    font-weight: bold;
+}
+
+.activity-text + p {
+    font-size: x-large;
+    color: #535993;
 }
