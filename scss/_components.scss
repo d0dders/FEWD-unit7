@@ -72,6 +72,12 @@ input, textarea, button {
     font-size: medium;
 }
 
+input:focus,
+textarea:focus {
+    outline: 0;
+    border: 2px solid #535993;
+}
+
 textarea {
     height: 110px;
 }
