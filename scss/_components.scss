@@ -91,6 +91,27 @@ button {
 
 /* SETTINGS */
 
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.switch-light {
+    display: flex;
+    align-items: center;
+}
+
+.switch-ios.switch-light .toggle {
+    width: 70px;
+    margin-left: auto;
+
+}
+
+
+
 select {
     width: 100%;
 }
