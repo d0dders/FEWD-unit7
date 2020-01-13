@@ -56,3 +56,29 @@
     font-size: x-large;
     color: #535993;
 }
+
+/* MESSAGE USER */
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, button {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+    font-size: medium;
+}
+
+textarea {
+    height: 110px;
+}
+
+button {
+    background-color: #535993;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0;
+}

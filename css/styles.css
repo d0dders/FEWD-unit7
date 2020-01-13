@@ -208,6 +208,36 @@ img.active-nav {
   color: #535993;
 }
 
+/* MESSAGE USER */
+.message-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+input, textarea, button {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid grey;
+  margin-bottom: 10px;
+  font-size: medium;
+}
+
+textarea {
+  height: 110px;
+}
+
+button {
+  background-color: #535993;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
 * {
   font-family: 'Roboto', sans-serif;
 }
