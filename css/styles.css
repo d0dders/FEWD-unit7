@@ -272,6 +272,10 @@ button {
   margin-left: auto;
 }
 
+.form-field, .switch-light {
+  padding-bottom: 10px;
+}
+
 select {
   width: 100%;
 }
