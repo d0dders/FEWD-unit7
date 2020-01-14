@@ -1,0 +1,24 @@
+.alert-banner {
+    background-color: #535993;
+    color: white;
+    display: flex;
+    
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.alert-banner-close {
+    margin-left: auto;
+}
+
+.alert {
+    width: 100%;
+    padding: 15px 15px;
+}
+
+@media (min-width: 768px) {
+    .alert {
+        grid-column: 1 / 3;
+
+    }
+}

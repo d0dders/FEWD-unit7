@@ -1,26 +1,21 @@
-/* HEADER */
-.header, .user-area {
+/* DASHBOARD HEAD */
+.dash-head {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: #535993;
-    color: white;
 }
 
-.header {
-    padding: 10px 20px;
+.dash-head h2 {
+    padding: 15px;
 }
 
-.notification-icon img {
-    height: 25px;
-    margin-right: 15px
+.main-header-search {
+    margin-left: auto;
 }
 
-.profile-pic {
-    border-radius: 50%;
-    height: 50px;
-    margin: 0 15px;
+.main-header-search input {
+    margin: 15px;
 }
+
 
 /* MEMBERS & ACTIVITY */
 .members-container {

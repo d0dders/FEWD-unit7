@@ -1,0 +1,39 @@
+/* HEADER */
+.header, .user-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #535993;
+    color: white;
+}
+
+.header {
+    padding: 10px 20px;
+}
+
+.notification-icon img {
+    height: 25px;
+    margin-right: 15px
+}
+
+.profile-pic {
+    border-radius: 50%;
+    height: 50px;
+    margin: 0;
+}
+
+.user-name {
+    display: none;
+}
+
+@media (min-width: 500px) {
+    .user-name {
+        display: initial;
+    }
+
+    .profile-pic {
+       
+        margin: 0 15px;
+    }
+
+}

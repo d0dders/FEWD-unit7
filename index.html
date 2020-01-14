@@ -15,7 +15,7 @@
         <div class="user-area">
             <div class="notification-icon"><img src="icons/icon-bell.svg" alt="Notifications"></div>
             <img class="profile-pic" src="images/member-2.jpg" alt="Profile picture">
-            <h3>Paul Dodkins</h3>
+            <h3 class="user-name">Paul Dodkins</h3>
         </div>
     </header>
     <nav class="navigation">
@@ -25,9 +25,15 @@
         <a href="#"><img src="icons/icon-settings.svg" alt="Settings Link"></a>
     </nav>
     <main class="dashboard">
-        <section class="dash-head">
+        <div class="dash-head">
             <h2>Dashboard</h2>
-        </section>
+            <div class="main-header-search">
+                <input type="search" placeholder="Search..." />
+            </div>
+        </div>
+        <div class="alert" id="alert" >
+            <!-- JS will insert alert here -->
+            </div>
         <section class="traffic">
             <h3>TRAFFIC</h3>
             <canvas id="traffic" width="100"></canvas>
