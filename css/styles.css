@@ -148,14 +148,26 @@ img.active-nav {
 
 .dash-head h2 {
   padding: 15px;
+  display: none;
 }
 
 .main-header-search {
-  margin-left: auto;
+  width: 100%;
+  padding: 15px;
 }
 
 .main-header-search input {
-  margin: 15px;
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  .dash-head h2 {
+    display: initial;
+  }
+  .main-header-search {
+    margin-left: auto;
+    width: 300px;
+  }
 }
 
 /* MEMBERS & ACTIVITY */
@@ -373,7 +385,7 @@ h3 {
 
 .alert {
   width: 100%;
-  padding: 15px 15px;
+  padding: 0 15px 15px 15px;
 }
 
 @media (min-width: 768px) {

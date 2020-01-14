@@ -2,7 +2,6 @@
     background-color: #535993;
     color: white;
     display: flex;
-    
     padding: 15px;
     border-radius: 6px;
 }
@@ -13,12 +12,11 @@
 
 .alert {
     width: 100%;
-    padding: 15px 15px;
+    padding: 0 15px 15px 15px;
 }
 
 @media (min-width: 768px) {
     .alert {
         grid-column: 1 / 3;
-
     }
 }
