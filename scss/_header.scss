@@ -30,6 +30,21 @@
     margin-right: 15px
 }
 
+.notification-icon img:hover {
+    animation-name: ring;
+    animation-duration: .8s;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes ring {
+    0% { transform: rotate(-10deg) }
+    20% { transform: rotate(10deg) }
+    40% { transform: rotate(-10deg) }
+    60% { transform: rotate(10deg) }
+    80% { transform: rotate(-10deg) }
+    100% { transform: rotate(10deg) }
+  }
+
 .profile-pic {
     border-radius: 50%;
     height: 50px;
