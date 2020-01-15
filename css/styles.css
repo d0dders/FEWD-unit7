@@ -415,6 +415,20 @@ h3 {
   padding: 10px 20px;
 }
 
+#notification {
+  background-color: #00B382;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  top: -3px;
+}
+
+.notification-icon {
+  position: relative;
+}
+
 .notification-icon img {
   height: 25px;
   margin-right: 15px;
