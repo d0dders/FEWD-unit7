@@ -137,3 +137,41 @@ select {
 .button-disabled {
     float: right;
 }
+
+/* TRAFFIC TOGGLE */
+.traffic h3 {
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.switch-toggle {
+    float: right;
+    width: 250px;
+    height: 30px;
+}
+
+.switch-ios input:checked + label {
+    color: white;
+}
+
+.switch-ios.switch-toggle {
+    box-shadow: none;
+    background-color: transparent;
+    font-size: x-small;
+    width: 150px;
+}
+
+
+@media (min-width: 400px) {
+    .switch-ios.switch-toggle {
+        font-size: small;
+        width: 250px;
+    }
+}
+
+@media (min-width: 600px) {
+    .switch-ios.switch-toggle {
+        font-size: medium;
+        width: 400px;
+    }
+}
