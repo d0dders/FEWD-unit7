@@ -15,6 +15,23 @@ nav.addEventListener('click', (e) => {
 });
 
 /*----------------------------------------------*/
+/*               NOTIFICATIONS                  */
+/*----------------------------------------------*/
+const notificationIcon = document.querySelector('.notification-icon');
+const notificationArea = document.querySelector('.dropdown-content');
+
+notificationArea.style.display = 'none';
+
+notificationIcon.addEventListener('click', (e) => {
+    if(notificationArea.style.display === 'none') {
+        notificationArea.style.display = 'block';
+    } else {
+        notificationArea.style.display = 'none';
+    }
+});
+
+
+/*----------------------------------------------*/
 /*                  ALERT                       */
 /*----------------------------------------------*/
 const alertBanner = document.getElementById("alert");

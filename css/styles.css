@@ -387,6 +387,7 @@ h3 {
 
 .alert-banner-close {
   margin-left: auto;
+  cursor: pointer;
 }
 
 .alert {
@@ -433,6 +434,7 @@ h3 {
 
 .notification-icon {
   position: relative;
+  display: inline-block;
 }
 
 .notification-icon img {
@@ -447,6 +449,7 @@ h3 {
           animation-duration: .8s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
+  cursor: pointer;
 }
 
 @-webkit-keyframes ring {
@@ -501,6 +504,31 @@ h3 {
     -webkit-transform: rotate(10deg);
             transform: rotate(10deg);
   }
+}
+
+.dropdown-content {
+  padding: 0 15px;
+  top: 50px;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  width: 500px;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content p {
+  color: #535993;
+  position: relative;
+  font-size: large;
+  padding: 15px 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+.dropdown-content p:last-child {
+  border-bottom: none;
 }
 
 .profile-pic {
