@@ -548,6 +548,7 @@ h3 {
   padding: 0 15px;
   top: 50px;
   position: absolute;
+  right: 0;
   background-color: #f9f9f9;
   width: 160px;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -588,7 +589,6 @@ h3 {
 
 @media (min-width: 768px) {
   .dropdown-content {
-    right: 0;
     width: 300px;
   }
 }
