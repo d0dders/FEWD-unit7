@@ -83,6 +83,9 @@ function loadSavedSettings() {
     if(localStorage.timezone) {
       timezone.value = localStorage.getItem('timezone');
     }
+    else { 
+      timezone.value = "Select a Timezone";
+    }
   }
 }
 
