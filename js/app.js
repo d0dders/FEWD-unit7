@@ -52,6 +52,71 @@ alertBanner.addEventListener('click', e => {
 });
 
 /*-----------------------------------------------*/
+/*                 SETTINGS                      */
+/*-----------------------------------------------*/
+const save = document.querySelector('#save');
+const cancel = document.querySelector('#cancel');
+const emailCheck = document.querySelector('#emailCheck');
+const publicCheck = document.querySelector('#publicCheck');
+const timezone = document.querySelector('#timezone');
+
+function supportsLocalStorage() {
+  try{
+    return 'localStorage' in window && window.localStorage !== null;
+  } catch(e) {
+    return false;
+  }
+}
+
+function loadSavedSettings() {
+  if(supportsLocalStorage){
+    if(localStorage.getItem('email') === 'true') {
+      emailCheck.checked = true;
+    } else {
+      emailCheck.checked = false;
+    }
+    if(localStorage.getItem('public') === 'true') {
+      publicCheck.checked = true;
+    } else {
+      publicCheck.checked = false;
+    }
+    timezone.value = localStorage.getItem('timezone');
+  }
+}
+
+window.onload = () => {
+  loadSavedSettings();
+};
+
+save.addEventListener('click',() => {
+  if (supportsLocalStorage()){
+    if (emailCheck.checked){
+      localStorage.setItem('email', 'true');
+    } else {
+      localStorage.setItem('email', 'false');
+    }
+
+    if (publicCheck.checked){
+      localStorage.setItem('public', 'true');
+    } else {
+      localStorage.setItem('public', 'false');
+    }
+
+    localStorage.setItem('timezone', timezone.value);
+  }
+});
+
+cancel.addEventListener('click', () => {
+  loadSavedSettings();
+});
+
+
+
+
+
+
+
+/*-----------------------------------------------*/
 /*                MESSAGING                      */
 /*-----------------------------------------------*/
 const user = document.getElementById("userField");
