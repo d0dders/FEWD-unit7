@@ -80,7 +80,9 @@ function loadSavedSettings() {
     } else {
       publicCheck.checked = false;
     }
-    timezone.value = localStorage.getItem('timezone');
+    if(localStorage.timezone) {
+      timezone.value = localStorage.getItem('timezone');
+    }
   }
 }
 
@@ -235,6 +237,6 @@ function autocomplete(inp, arr) {
   document.addEventListener("click", function (e) {
       closeAllLists(e.target);
   });
-  }
+}
 
-  autocomplete(document.getElementById("userText"), members);
+autocomplete(user, members);
